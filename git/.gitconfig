@@ -1,28 +1,20 @@
 [user]
-	name = Samuel Vaillant
-	email = s.vaillant@creads.org
+  name = Samuel Vaillant
+  email = samy-07@live.fr
 [color]
-	ui = true
-[alias]
-   	co = checkout
-    	ci = commit
-	st = status
-	br = branch
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	amend = commit --amend
-	prune = remote prune origin
-	nbci = shortlog -s -n --all
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-        cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
-	undo = reset HEAD^1 --soft
+  ui = true
 [core]
-	excludesfile = /Users/ronanpelloux/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  excludesfile = /Users/ronanpelloux/.gitignore_global
+  editor = nano
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  amend = commit --amend
+  prune = remote prune origin
+  undo = reset HEAD^1 --soft
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+  nbci = shortlog -s -n --all
 [push]
-	default = simple
+  default = simple

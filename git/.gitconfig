@@ -4,7 +4,7 @@
 [color]
   ui = true
 [core]
-  excludesfile = /Users/ronanpelloux/.gitignore_global
+  excludesfile = /Users/YOUR_PATH/.gitignore_global
   editor = nano
 [alias]
   co = checkout

@@ -1,0 +1,12 @@
+[user]
+	name = Vaillant Samuel
+	email = samuel.vaillant@captaindash.com
+[color]
+  ui = true
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	undo = reset --soft HEAD^
+[push]
+	default = simple

@@ -1,0 +1,124 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "22c5521c-e18a-4ac2-bdf5-56c49c4e9316"
+  "atom-typescript": {}
+  "autocomplete-flow": {}
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "linter-flow"
+      "nuclide"
+      "haskell-grammar"
+    ]
+    openEmptyEditorOnStart: false
+    projectHome: "/Users/samuel/Web"
+  docblockr: {}
+  editor:
+    fontSize: 10
+    invisibles: {}
+    preferredLineLength: 120
+    showIndentGuide: true
+    softWrap: true
+  emmet: {}
+  "exception-reporting":
+    userId: "143f2c54-09aa-af3e-434c-e2de41e7b9ac"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "flow-ide": {}
+  "haskell-ghc-mod":
+    additionalPathDirectories: [
+      "/Users/samuel/.nvm/versions/node/v6.3.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin"
+      "/Users/samuel/Library/Haskell/bin"
+    ]
+    ghcModPath: "/Users/samuel/Library/Haskell/bin/ghc-mod"
+    onSelectionShow: "typeAndInfo"
+  "ide-flow":
+    flowPath: "/Users/samuel/.nvm/versions/node/v6.2.0/bin/flow"
+  "ide-haskell":
+    onCursorMove: "Show Tooltip"
+  "language-elm":
+    elmOraclePath: "/Users/samuel/.nvm/versions/node/v5.9.0/bin/elm-oracle"
+  linter:
+    errorPanelHeight: 25
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  "linter-flow": {}
+  "linter-tslint": {}
+  nuclide:
+    "nuclide-home":
+      showHome: false
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+".ansi.text":
+  editor:
+    preferredLineLength: 120
+".basic.html.text":
+  "wrap-guide":
+    enabled: false
+".c2hs.source":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 120
+".cabal.source":
+  editor:
+    preferredLineLength: 120
+    tabLength: 4
+".elm.source":
+  editor:
+    autoIndentOnPaste: true
+    preferredLineLength: 80
+    scrollPastEnd: false
+    softWrapAtPreferredLineLength: true
+".hack.html.text":
+  editor:
+    preferredLineLength: 120
+".hackfragment.source":
+  editor:
+    preferredLineLength: 120
+".haskell.hint":
+  editor:
+    preferredLineLength: 120
+".haskell.hint.message":
+  editor:
+    preferredLineLength: 120
+".haskell.hint.type":
+  editor:
+    preferredLineLength: 120
+".haskell.latex.tex.text":
+  editor:
+    preferredLineLength: 120
+".haskell.source":
+  editor:
+    preferredLineLength: 120
+    tabLength: 4
+".hg-commit.text":
+  editor:
+    preferredLineLength: 120
+".hsc2hs.source":
+  editor:
+    preferredLineLength: 120
+".ini.source":
+  editor:
+    preferredLineLength: 120
+".source.ts":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: false
+    preferredLineLength: 100
+".source.tsx":
+  editor:
+    preferredLineLength: 100

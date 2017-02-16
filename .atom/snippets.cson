@@ -41,10 +41,6 @@
     'prefix': 'cte;'
     'body': 'console.timeEnd($1);'
 
-  'Console logger beautifier':
-    'prefix': 'jsoncs;'
-    'body': 'console.log(JSON.stringify($1, null, 2));'
-
   'Performance test':
     'prefix': 'perftest;'
     'body': """
@@ -75,3 +71,7 @@
         console.log(`T1 takes ${ median(res1) }ms`);
       console.groupEnd();
     """
+
+  'Logger beautifier':
+    'prefix': 'jsoncs;'
+    'body': 'console.log(JSON.stringify($1, null, 2));'

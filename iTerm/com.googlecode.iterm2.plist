@@ -304,7 +304,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Web/dotfiles</string>
+	<string>~/Web/dotfiles/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -338,14 +338,16 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>530 482 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 125 918 495 0 0 1680 1027 </string>
+	<string>269 217 796 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>66 241 880 538 0 0 1680 1027 </string>
+	<string>66 227 880 517 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>312 125 880 538 0 0 1680 1050 </string>
+	<string>312 104 880 538 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>232 198 880 517 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_B4FABC19-C03E-4DE9-AC0E-351D8E3B4B08</key>
@@ -1091,7 +1093,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>E3E9D9CE-59C4-4F4F-9671-E5FB6681B7F7</string>
 	<key>NoSyncLastTipTime</key>
-	<real>509981794.42033601</real>
+	<real>510393245.70240599</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1109,6 +1111,9 @@
 		<string>0003</string>
 		<string>0004</string>
 		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -1160,7 +1165,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/samuel/Web/dotfiles</string>
+	<string>/Users/samuel/Web/dotfiles/iTerm</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -1180,7 +1185,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-02-28T13:36:33Z</date>
+	<date>2017-03-05T07:53:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1232,6 +1237,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.14</string>
+	<string>3.0.15</string>
 </dict>
 </plist>

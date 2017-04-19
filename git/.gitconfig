@@ -1,12 +1,16 @@
 [user]
 	name = Vaillant Samuel
 	email = samuel.vllnt@gmail.com
+
 [color]
   ui = true
+
 [alias]
 	co = checkout
 	st = status
 	br = branch
 	undo = reset --soft HEAD^
+	wip = !git add -A && git commit -m 'WIP'
+
 [push]
 	default = simple

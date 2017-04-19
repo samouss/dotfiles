@@ -14,3 +14,4 @@
 
 [push]
 	default = simple
+	followTags = true

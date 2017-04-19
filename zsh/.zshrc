@@ -47,6 +47,10 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
+# Fastlane
+export PATH="$HOME/.fastlane/bin:$PATH"
+
+# nvm
 export NVM_DIR="/Users/samuel/.nvm"
 # This loads nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"

@@ -10,6 +10,7 @@
       "source.ini": [
         ".buckconfig"
         ".flowconfig"
+        ".hgrc"
       ]
       "source.json": [
         ".arcconfig"
@@ -20,8 +21,8 @@
       ]
     disabledPackages: [
       "linter-flow"
-      "nuclide"
       "haskell-grammar"
+      "linter"
     ]
     ignoredNames: [
       ".git"
@@ -46,6 +47,11 @@
   emmet: {}
   "exception-reporting":
     userId: "143f2c54-09aa-af3e-434c-e2de41e7b9ac"
+  "file-icons":
+    coloured: false
+    onChanges: true
+    strategies: {}
+    tabPaneIcon: false
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
   "flow-ide": {}
@@ -64,19 +70,36 @@
     autoIndentJSX: false
   "language-elm":
     elmOraclePath: "/Users/samuel/.nvm/versions/node/v5.9.0/bin/elm-oracle"
-  linter:
-    errorPanelHeight: 25
+  linter: {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
   "linter-flow": {}
   "linter-tslint": {}
+  "linter-ui-default":
+    panelHeight: 111
+    showPanel: true
   nuclide:
+    "nuclide-diagnostics-ui": {}
+    "nuclide-file-tree":
+      revealFileOnSwitch: true
+      showOpenFiles: false
+    "nuclide-flow":
+      canUseFlowBin: true
     "nuclide-home":
       showHome: false
+    "nuclide-working-sets": {}
+    use:
+      "nuclide-debugger": false
+      "nuclide-file-tree": false
+      "nuclide-side-bar": false
+      "nuclide-source-control-side-bar": false
   "one-dark-ui":
     layoutMode: "Compact"
   pigments:
     markerType: "native-underline"
+  "seti-icons": {}
+  "tool-bar":
+    visible: false
   "tree-view": {}
   welcome:
     showOnStartup: false

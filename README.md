@@ -9,7 +9,7 @@ ln -s "$PWD/git/.gitconfig" ~/.gitconfig
 ### oh-my-zsh
 
 ```bash
-cp "$PWD/zsh/.zshrc" ~/.zshrc
+ln -s "$PWD/zsh/.zshrc" ~/.zshrc
 ```
 
 ### Atom

@@ -3,26 +3,27 @@
     _analyticsUserId: "22c5521c-e18a-4ac2-bdf5-56c49c4e9316"
     general:
       _analyticsUserId: "b65e1e19-06b0-45a0-8ed8-03b23f1b8d6b"
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui": {}
+    "atom-ide-find-references": {}
+    "atom-ide-outline-view": {}
+  "atom-package-deps":
+    ignored: []
   "atom-typescript": {}
   "autocomplete-flow": {}
   core:
     customFileTypes:
+      "source.css.scss": [
+        "css"
+      ]
       "source.ini": [
-        ".buckconfig"
         ".flowconfig"
-        ".hgrc"
       ]
-      "source.json": [
-        ".arcconfig"
-        "BUCK.autodeps"
-      ]
-      "source.python": [
-        "BUCK"
-      ]
+    destroyEmptyPanes: false
     disabledPackages: [
-      "linter-flow"
-      "haskell-grammar"
+      "github"
       "linter"
+      "linter-ui-default"
     ]
     ignoredNames: [
       ".git"
@@ -31,22 +32,18 @@
       ".DS_Store"
       "._*"
       "Thumbs.db"
-      "ios"
-      "android"
     ]
     openEmptyEditorOnStart: false
-    projectHome: "/Users/samuel/Web"
     telemetryConsent: "limited"
   docblockr: {}
   editor:
-    fontSize: 11
+    fontSize: 10
     invisibles: {}
-    preferredLineLength: 120
     showIndentGuide: true
     softWrap: true
   emmet: {}
   "exception-reporting":
-    userId: "143f2c54-09aa-af3e-434c-e2de41e7b9ac"
+    userId: "074f8494-c93a-40c8-a2ac-34468f293cee"
   "file-icons":
     coloured: false
     onChanges: true
@@ -55,36 +52,25 @@
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
   "flow-ide": {}
-  "haskell-ghc-mod":
-    additionalPathDirectories: [
-      "/Users/samuel/.nvm/versions/node/v6.3.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin"
-      "/Users/samuel/Library/Haskell/bin"
-    ]
-    ghcModPath: "/Users/samuel/Library/Haskell/bin/ghc-mod"
-    onSelectionShow: "typeAndInfo"
-  "ide-flow":
-    flowPath: "/Users/samuel/.nvm/versions/node/v6.2.0/bin/flow"
-  "ide-haskell":
-    onCursorMove: "Show Tooltip"
+  "git-diff": {}
   "language-babel":
     autoIndentJSX: false
-  "language-elm":
-    elmOraclePath: "/Users/samuel/.nvm/versions/node/v5.9.0/bin/elm-oracle"
   linter: {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
   "linter-flow": {}
   "linter-tslint": {}
   "linter-ui-default":
-    panelHeight: 111
-    showPanel: true
+    panelHeight: 244.5
   nuclide:
-    "nuclide-diagnostics-ui": {}
+    "nuclide-diagnostics-ui":
+      showDiagnosticTraces: true
     "nuclide-file-tree":
       revealFileOnSwitch: true
       showOpenFiles: false
     "nuclide-flow":
       canUseFlowBin: true
+      warnOnNotInstalled: false
     "nuclide-home":
       showHome: false
     "nuclide-working-sets": {}
@@ -92,85 +78,40 @@
       "nuclide-debugger": false
       "nuclide-file-tree": false
       "nuclide-side-bar": false
-      "nuclide-source-control-side-bar": false
-  "one-dark-ui":
-    layoutMode: "Compact"
+      "nuclide-source-control-side-bar": true
+      "nuclide-workspace-view-locations": false
+      "nuclide-workspace-views": false
+  "one-dark-ui": {}
   pigments:
     markerType: "native-underline"
+  "prettier-atom":
+    formatOnSaveOptions:
+      cssScopes: [
+        ""
+      ]
+      enabled: true
+      isDisabledIfNotInPackageJson: true
+      jsonScopes: [
+        ""
+      ]
+      showInStatusBar: true
+    prettierOptions:
+      singleQuote: true
+      trailingComma: "all"
   "seti-icons": {}
   "tool-bar":
     visible: false
   "tree-view": {}
   welcome:
     showOnStartup: false
-".ansi.text":
-  editor:
-    preferredLineLength: 120
-".babel.regexp.source":
-  editor:
-    preferredLineLength: 120
 ".basic.html.text":
   "wrap-guide":
     enabled: false
-".c2hs.source":
-  editor:
-    autoIndentOnPaste: false
-    preferredLineLength: 120
-".cabal.source":
-  editor:
-    preferredLineLength: 120
-    tabLength: 4
-".css.source.styled":
-  editor:
-    preferredLineLength: 120
 ".elm.source":
   editor:
     autoIndentOnPaste: true
-    preferredLineLength: 80
     scrollPastEnd: false
     softWrapAtPreferredLineLength: true
-".hack.html.text":
-  editor:
-    preferredLineLength: 120
-".hackfragment.source":
-  editor:
-    preferredLineLength: 120
-".haskell.hint":
-  editor:
-    preferredLineLength: 120
-".haskell.hint.message":
-  editor:
-    preferredLineLength: 120
-".haskell.hint.type":
-  editor:
-    preferredLineLength: 120
-".haskell.latex.tex.text":
-  editor:
-    preferredLineLength: 120
 ".haskell.source":
   editor:
-    preferredLineLength: 120
     tabLength: 4
-".hg-commit.text":
-  editor:
-    preferredLineLength: 120
-".hsc2hs.source":
-  editor:
-    preferredLineLength: 120
-".ini.source":
-  editor:
-    preferredLineLength: 120
-".js.jsx.source":
-  editor:
-    preferredLineLength: 120
-".languagebabel.ttlextension":
-  editor:
-    preferredLineLength: 120
-".source.ts":
-  editor:
-    autoIndent: true
-    autoIndentOnPaste: false
-    preferredLineLength: 100
-".source.tsx":
-  editor:
-    preferredLineLength: 100

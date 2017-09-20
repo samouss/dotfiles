@@ -51,8 +51,7 @@ PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 # nvm
-export NVM_DIR="/Users/samuel/.nvm"
-# This loads nvm
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Alias

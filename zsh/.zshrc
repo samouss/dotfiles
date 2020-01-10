@@ -45,7 +45,7 @@ plugins=(git sublime osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # Fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"

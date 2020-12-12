@@ -55,4 +55,60 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Alias
-alias static-serve="python -m SimpleHTTPServer 8000"
+alias static-serve="python -m http.server"
+alias ngrok="~/.ngrok"
+alias codegit="GIT_EDITOR=\"code --wait\" git"
+alias git=hub
+alias kube=kubectl
+alias tf=terraform
+alias gcloud-prod="gcloud --project=alg-analytics"
+alias gcloud-test="gcloud --project=alg-analytics-test"
+alias cbt-usage="cbt -project=alg-analytics -instance=alg-log-processing-production"
+
+# Yarn
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# Ruby
+export PATH="$HOME/.rvm/bin:$PATH"
+
+# Python
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Go
+export GOPATH="$HOME/Work/go"
+export PATH="/usr/local/go/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
+export GO111MODULE=on
+
+# Vault
+export PATH="$HOME/Work/vault/bin:$PATH"
+export VAULT_ADDR="https://vault-elb.algolia.net:8200"
+
+# psql
+export PSQL_EDITOR="code -w"
+
+# LDAP username
+export AUSER=svaillant
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/samuelvaillant/Work/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/samuelvaillant/Work/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/samuelvaillant/Work/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/samuelvaillant/Work/google-cloud-sdk/completion.zsh.inc'; fi
+
+# The next line enables shell command completion for kubectl.
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
+
+# Kube context
+if [ -f '/usr/local/opt/kube-ps1/share/kube-ps1.sh' ]; then
+  source '/usr/local/opt/kube-ps1/share/kube-ps1.sh'
+  KUBE_PS1_NS_ENABLE=false
+  PROMPT='$(kube_ps1) '$PROMPT
+fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform

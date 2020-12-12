@@ -42,6 +42,10 @@ ZSH_THEME="norm"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git sublime osx)
 
+# Disable ZSH message about permissions.
+# https://github.com/ohmyzsh/ohmyzsh/issues/6835#issuecomment-390216875
+ZSH_DISABLE_COMPFIX="true"
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...

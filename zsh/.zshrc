@@ -116,5 +116,8 @@ if [ -f '/usr/local/opt/kube-ps1/share/kube-ps1.sh' ]; then
   PROMPT='$(kube_ps1) '$PROMPT
 fi
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
+# The next line enables shell command completion for Terraform.
+if [ -f '/usr/local/bin/terraform' ]; then
+  autoload -U +X bashcompinit && bashcompinit
+  complete -o nospace -C /usr/local/bin/terraform terraform
+fi

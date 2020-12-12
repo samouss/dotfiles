@@ -99,10 +99,14 @@ export PSQL_EDITOR="code -w"
 export AUSER=svaillant
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f "$HOME/Work/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/Work/google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$HOME/Work/google-cloud-sdk/path.zsh.inc" ]; then
+  . "$HOME/Work/google-cloud-sdk/path.zsh.inc";
+fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f "$HOME/Work/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/Work/google-cloud-sdk/completion.zsh.inc"; fi
+if [ -f "$HOME/Work/google-cloud-sdk/completion.zsh.inc" ]; then
+  . "$HOME/Work/google-cloud-sdk/completion.zsh.inc";
+fi
 
 # The next line enables shell command completion for kubectl.
 if [ $commands[kubectl] ]; then

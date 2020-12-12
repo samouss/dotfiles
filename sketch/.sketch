@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+date 0102030405
+sleep 2s
+open /Applications/Sketch.app
+sleep 5s
+sntp -sS time.apple.com

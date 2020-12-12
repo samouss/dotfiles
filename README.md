@@ -23,3 +23,12 @@ Turn on the preferences from a custom folder:
 ```
 Settings > General > Preferences
 ```
+
+### Sketch
+
+```
+ln -s "$PWD/sketch/.sketch" ~/.sketch
+chmod +x ~/.sketch
+```
+
+> https://www.sketch.com/updates/#version-53.2

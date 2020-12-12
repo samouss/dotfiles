@@ -87,6 +87,7 @@ export PATH="$HOME/Work/vault/bin:$PATH"
 export VAULT_ADDR="https://vault-elb.algolia.net:8200"
 
 # psql
+export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PSQL_EDITOR="code -w"
 
 # LDAP username

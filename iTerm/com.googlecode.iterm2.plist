@@ -538,6 +538,8 @@
 			<string>No</string>
 			<key>Custom Directory</key>
 			<string>Advanced</string>
+			<key>Custom Locale</key>
+			<string>en_US.UTF-8</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -856,7 +858,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>OperatorMono-Book 13</string>
+			<string>OperatorMono-Book 17</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -903,7 +905,7 @@
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Set Local Environment Vars</key>
-			<true/>
+			<integer>2</integer>
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
@@ -1090,7 +1092,7 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
-	<key>PreventEscapeSequenceFromClearingHistory</key>
+	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<false/>
 	<key>Print In Black And White</key>
 	<true/>
@@ -1104,6 +1106,8 @@
 	<integer>3</integer>
 	<key>SavePasteHistory</key>
 	<false/>
+	<key>SeparateWindowTitlePerTab</key>
+	<true/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1114,6 +1118,21 @@
 	<true/>
 	<key>SmartPlacement</key>
 	<false/>
+	<key>Snippets</key>
+	<array>
+		<dict>
+			<key>escaping</key>
+			<integer>0</integer>
+			<key>guid</key>
+			<string>1DF758E1-E5A8-42B1-A99E-1C41C153E2A8</string>
+			<key>title</key>
+			<string>localhost:51514</string>
+			<key>value</key>
+			<string>localhost:51514</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -1154,6 +1173,8 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>cd</string>
+	<key>WorkAroundBigSurBug</key>
+	<true/>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
 	<key>findMode_iTerm</key>

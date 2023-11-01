@@ -24,10 +24,13 @@ source $ZSH/oh-my-zsh.sh
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # Homebrew
-# https://github.com/Homebrew/brew/pull/9117
-# Use /usr/local on Intel.
-BREWPATH=/opt/homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+# https://github.com/Homebrew/brew/pull/9117
+BREWPATH=/usr/local
+if [[ $(uname -m) == 'arm64' ]]; then
+  BREWPATH=/opt/homebrew
+fi
+
 
 # Git
 alias git=hub

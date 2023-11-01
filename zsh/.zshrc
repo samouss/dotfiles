@@ -53,12 +53,10 @@ alias codegit="GIT_EDITOR=\"code --wait\" git"
 
 # Go
 export GOPATH="$HOME/Work/go"
-export PATH="/usr/local/go/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 export GO111MODULE=on
 
 # Vault
-export PATH="$HOME/Work/vault/bin:$PATH"
 export VAULT_ADDR="https://vault-elb.algolia.net:8200"
 
 # psql

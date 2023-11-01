@@ -33,7 +33,6 @@ fi
 
 
 # Git
-alias git=hub
 alias codegit="GIT_EDITOR=\"code --wait\" git"
 
 # Fastlane

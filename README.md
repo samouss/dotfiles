@@ -1,5 +1,15 @@
 ## Dotfiles
 
+### brew
+
+```
+brew bundle
+```
+
+```
+brew bundle dump
+```
+
 ### git
 
 ```bash

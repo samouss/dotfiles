@@ -25,12 +25,6 @@ PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
-# https://github.com/Homebrew/brew/pull/9117
-BREWPATH=/usr/local
-if [[ $(uname -m) == 'arm64' ]]; then
-  BREWPATH=/opt/homebrew
-fi
-
 
 # Git
 alias codegit="GIT_EDITOR=\"code --wait\" git"
@@ -62,7 +56,7 @@ export GO111MODULE=on
 export VAULT_ADDR="https://vault-elb.algolia.net:8200"
 
 # psql
-export PATH="$BREWPATH/opt/libpq/bin:$PATH"
+export PATH="$(brew --prefix)/opt/libpq/bin:$PATH"
 export PSQL_EDITOR="code -w"
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -84,8 +78,8 @@ export PSQL_EDITOR="code -w"
 alias kube=kubectl
 alias kubens="kubectl config set-context --current --namespace "
 alias codekube="KUBE_EDITOR=\"code -w\" kubectl"
-if [ -f "$BREWPATH/opt/kube-ps1/share/kube-ps1.sh" ]; then
-  source "$BREWPATH/opt/kube-ps1/share/kube-ps1.sh"
+if [ -f "$(brew --prefix)/opt/kube-ps1/share/kube-ps1.sh" ]; then
+  source "$(brew --prefix)/opt/kube-ps1/share/kube-ps1.sh"
   KUBE_PS1_NS_ENABLE=true
   PROMPT='$(kube_ps1) '$PROMPT
 fi
@@ -98,10 +92,10 @@ alias tf=terraform
 # fi
 
 # LLVM
-export CC=$BREWPATH/opt/llvm@16/bin/clang
-export CXX=$BREWPATH/opt/llvm@16/bin/clang++
-export LDFLAGS="${LDFLAGS} -L${BREWPATH}/opt/llvm@16/lib -Wl,-rpath,${BREWPATH}/opt/llvm@16/lib"
-export PATH="${BREWPATH}/opt/llvm@16/bin:$PATH"
+export CC="$(brew --prefix)/opt/llvm@16/bin/clang"
+export CXX="$(brew --prefix)/opt/llvm@16/bin/clang++"
+export LDFLAGS="${LDFLAGS} -L$(brew --prefix)/opt/llvm@16/lib -Wl,-rpath,$(brew --prefix)/opt/llvm@16/lib"
+export PATH="$(brew --prefix)/opt/llvm@16/bin:$PATH"
 
 # Command
 alias static-serve="python -m http.server"

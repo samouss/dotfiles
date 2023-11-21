@@ -10,7 +10,8 @@
 	sw = switch
 	st = status --short
 	stl = status
-	br = branch -vv
+	br = branch
+	brl = branch -vv
 	undo = reset --soft HEAD^
 	wip = !git add -A && git commit -m 'WIP'
 

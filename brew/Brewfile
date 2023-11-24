@@ -2,9 +2,12 @@ tap "azure/kubelogin"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 
+cask "slack-cli"
+
 brew "awscli"
 brew "azure-cli"
 brew "coreutils"
+brew "deno"
 brew "gh"
 brew "git"
 brew "git-lfs"

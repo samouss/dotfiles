@@ -1,6 +1,7 @@
 tap "azure/kubelogin"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
+tap "tilt-dev/tap"
 
 cask "slack-cli"
 
@@ -25,3 +26,4 @@ brew "yq"
 brew "azure/kubelogin/kubelogin"
 brew "hashicorp/tap/terraform"
 brew "hashicorp/tap/vault"
+brew "tilt-dev/tap/ctlptl"

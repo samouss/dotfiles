@@ -74,7 +74,7 @@ export PSQL_EDITOR="code -w"
 #   source <(kubectl completion zsh)
 # fi
 
-# K8s.
+# K8s
 alias kube=kubectl
 alias kubens="kubectl config set-context --current --namespace "
 alias codekube="KUBE_EDITOR=\"code -w\" kubectl"
@@ -98,6 +98,10 @@ export LDFLAGS="${LDFLAGS} -L$(brew --prefix)/opt/llvm@16/lib -Wl,-rpath,$(brew 
 export PATH="$(brew --prefix)/opt/llvm@16/bin:$PATH"
 
 # Functions
+function metiskube() {
+  op run --env-file="/Users/samuel.vaillant/.metis/credentials" -- metiskube "$@"
+}
+
 function internalmetispgopen() {
   local port=5433
   local proxy="svc/psql-proxy"

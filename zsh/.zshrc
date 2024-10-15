@@ -97,10 +97,6 @@ export CXX="$(brew --prefix)/opt/llvm@16/bin/clang++"
 export LDFLAGS="${LDFLAGS} -L$(brew --prefix)/opt/llvm@16/lib -Wl,-rpath,$(brew --prefix)/opt/llvm@16/lib"
 export PATH="$(brew --prefix)/opt/llvm@16/bin:$PATH"
 
-# Command
-alias static-serve="python -m http.server"
-alias ngrok="~/.ngrok"
-
 # Functions
 function internalmetispgopen() {
   local port=5433

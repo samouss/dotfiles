@@ -97,6 +97,9 @@ export CXX="$(brew --prefix)/opt/llvm@16/bin/clang++"
 export LDFLAGS="${LDFLAGS} -L$(brew --prefix)/opt/llvm@16/lib -Wl,-rpath,$(brew --prefix)/opt/llvm@16/lib"
 export PATH="$(brew --prefix)/opt/llvm@16/bin:$PATH"
 
+# Metis
+alias localstack="AWS_ACCESS_KEY_ID=test AWS_SECRET_ACCESS_KEY=test AWS_DEFAULT_REGION=us-east-1 aws --endpoint-url=http://s3.minimetis.local.localhost:9000"
+
 # Functions
 function metiskube() {
   op run --env-file="/Users/samuel.vaillant/.metis/credentials" -- metiskube "$@"

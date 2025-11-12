@@ -109,6 +109,10 @@ function internalmetispgopen() {
     port=5434
     proxy="svc/psql-search-proxy"
   fi
+  if [[ "$2" == "search-deployer" ]]; then
+    port=5435
+    proxy="svc/psql-search-deployer-proxy"
+  fi
 
   metiskube $1
   kube port-forward ${proxy} $port:5432 &>/dev/null &
@@ -126,6 +130,9 @@ function internalmetispgclose() {
   if [[ "$1" == "search" ]]; then
     proxy="svc/psql-search-proxy"
   fi
+  if [[ "$1" == "search-deployer" ]]; then
+    proxy="svc/psql-search-deployer-proxy"
+  fi
 
   kill $(pgrep -f $proxy)
 }
@@ -135,6 +142,9 @@ function internalmetispgurl() {
   local port=5433
   if [[ "$2" == "search" ]]; then
     port=5434
+  fi
+  if [[ "$2" == "search-deployer" ]]; then
+    port=5435
   fi
 
   echo "host=localhost port=$port dbname=metis user=algolia password=$pass sslmode=require"

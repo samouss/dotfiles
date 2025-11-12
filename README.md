@@ -12,8 +12,19 @@ brew bundle dump
 
 ### git
 
+Credentials are stored in `~/.gitconfig.local`
+
 ```bash
 ln -s "$PWD/git/.gitconfig" ~/.gitconfig
+```
+
+```bash
+touch ~/.gitconfig.local
+```
+
+```
+[url "https://$TOKEN:x-oauth-basic@github.com/"]
+	insteadOf = https://github.com/
 ```
 
 ### ZSH

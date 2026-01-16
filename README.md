@@ -45,6 +45,12 @@ Turn on the preferences from a custom folder:
 Settings > General > Preferences
 ```
 
+### Claude
+
+```bash
+ln -s "$PWD/claude/settings.json" ~/.claude/settings.json
+```
+
 ### Sketch
 
 ```

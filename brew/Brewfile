@@ -8,6 +8,7 @@ cask "1password-cli"
 cask "google-cloud-sdk"
 cask "openvpn-connect"
 cask "slack-cli"
+cask "viscosity"
 
 brew "awscli"
 brew "azure-cli"

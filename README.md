@@ -59,3 +59,9 @@ chmod +x ~/.sketch
 ```
 
 > https://www.sketch.com/updates/#version-53.2
+
+### Metis
+
+```bash
+ln -s "$PWD/metis/credentials" ~/.metis/credentials
+```

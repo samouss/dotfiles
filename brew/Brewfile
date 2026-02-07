@@ -10,6 +10,7 @@ cask "google-cloud-sdk"
 cask "iterm2"
 cask "openvpn-connect"
 cask "slack-cli"
+cask "spotify"
 cask "viscosity"
 cask "visual-studio-code"
 

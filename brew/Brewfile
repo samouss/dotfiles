@@ -6,6 +6,7 @@ tap "guumaster/tap"
 
 cask "1password-cli"
 cask "google-cloud-sdk"
+cask "iterm2"
 cask "openvpn-connect"
 cask "slack-cli"
 cask "viscosity"

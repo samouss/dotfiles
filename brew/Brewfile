@@ -4,6 +4,7 @@ tap "homebrew/bundle"
 tap "tilt-dev/tap"
 tap "guumaster/tap"
 
+cask "1password"
 cask "1password-cli"
 cask "google-cloud-sdk"
 cask "iterm2"
